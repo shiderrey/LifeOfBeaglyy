@@ -1,0 +1,126 @@
+
+.cred{
+font-family:tahoma;
+	float:right;
+	font-size: 10px;
+	padding-bottom: 0px;
+}
+
+body {
+    background-image: url(bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    color: purple;
+    font-family: "Trirong", serif;
+    text-shadow: 3px 3px 5px grey;
+    font-size: 150%;
+	padding-left: 45px;
+	padding-right: 45px;
+	
+}
+
+.navi {
+	position:fixed;
+    width: 20%;
+    float: left;
+	padding-top: 150px;
+    padding-left: 40px;
+	padding-right: 1px;
+	/*border: 1px solid red;*/
+	
+}
+
+
+.ul_s {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+    
+}
+
+li a {
+    display: block;
+    color: red;
+    text-decoration: none;
+    font-family: Papyrus;
+    font-size: 130%;
+    padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+    background-color: none;
+    color: purple;
+    font-size: 160%
+}
+
+.active {
+    font-size: 160%
+}
+
+li a:link, li a:visited {
+    background-color: none;
+    color: red;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.cont1 {
+	font-family: "Trirong", serif;
+    width: 60%;
+    float: left;
+    padding-top: 40px;
+	padding-left: 495px;
+	padding-right: 100px;
+    /*border: 1px solid red;*/
+}
+
+.cont2 {
+	font-family: "Trirong", serif;
+    width: 50%;
+    float: left;
+    padding-top: 25px;
+	padding-left: 495px;
+	padding-right: 495px;
+    /*border: 1px solid red;*/
+}
+
+.cont3 {
+	font-family: "Trirong", serif;
+    width: 50%;
+    float: left;
+    padding-top: 25px;
+	padding-left: 495px;
+	padding-right: 495px;
+    /*border: 1px solid red;*/
+}
+
+
+
+/*image slider*/
+
+.mySlides {
+	padding: 30px;
+    display: block;
+	position:center;
+	border-radius:15%;
+}
+
+.mySlides2 {
+	padding: 30px;
+    display: block;
+	position:center;
+	border-radius:15%;
+}
+
+.mySlides3 {
+	padding: 30px;
+    display: block;
+	position:center;
+	border-radius:15%;
+}
