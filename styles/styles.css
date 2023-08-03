@@ -1,0 +1,170 @@
+/*Tool tip for button*/
+
+.tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.btn:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/*Floating button*/
+.floating_fnc{
+	position:fixed;
+	bottom:8%;
+	right:20px;
+	padding-left: 15px;
+	text-align: cen;
+	font-family:tahoma;
+	font-size: 10px;
+}
+
+.btn{
+	width:60px;
+	height:60px;
+	background-image: url(up.jpg);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-color: none;
+	background-size: 24px;
+	background-position: center;
+	float:right;
+	margin: 0 auto;
+	cursor: pointer;
+	box-shadow: 0 -2px 3px -1px grey;
+}
+
+.cred{
+	font-family:tahoma;
+	float:right;
+	font-size: 10px;
+	padding-bottom: 0px;
+}
+
+body {
+    background-image: url(bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    position: left;
+    top:0;
+    color: purple;
+    font-family: "Trirong", serif;
+    text-shadow: 3px 3px 5px grey;
+    font-size: 150%;
+	padding-left: 45px;
+	padding-right: 45px;
+	/*border: 1px solid red;*/
+	
+}
+
+.navi {
+    width: 15%;
+    float: left;
+	padding-top: 20px;
+    padding-left: 30px;
+	padding-right: 10px;
+	/*border: 1px solid red;*/
+	
+}
+
+.cont1 {
+	font-family: "Trirong", serif;
+    width: 70%;
+    float: left;
+    padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 30px;
+    /*border: 1px solid red;*/
+}
+
+@media screen and (max-width: 600px) {
+  .navi, .cont1 {
+    width: 100%;
+  }
+}
+
+.ul_s {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+    
+}
+
+li a {
+    display: block;
+    color: red;
+    text-decoration: none;
+    font-family: Papyrus;
+    font-size: 130%;
+    padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+    background-color: none;
+    color: purple;
+    font-size: 160%
+}
+
+.active {
+    font-size: 160%
+}
+
+li a:link, li a:visited {
+    background-color: none;
+    color: red;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+
+
+
+/*image slider*/
+
+.mySlides {
+	padding: 30px;
+    display: block;
+	position:center;
+	border-radius:15%;
+}
+
+.mySlides2 {
+	padding: 30px;
+    display: block;
+	position:center;
+	border-radius:15%;
+}
+
+.mySlides3 {
+	padding: 30px;
+    display: block;
+	position:center;
+	border-radius:15%;
+}
