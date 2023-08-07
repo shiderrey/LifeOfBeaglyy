@@ -34,8 +34,8 @@
 /*Floating button*/
 .floating_fnc{
 	position:fixed;
-	bottom:8%;
-	right:20px;
+	bottom:7%;
+	right:4px;
 	padding-left: 15px;
 	text-align: cen;
 	font-family:tahoma;
@@ -43,13 +43,13 @@
 }
 
 .btn{
-	width:60px;
-	height:60px;
+	width:40px;
+	height:40px;
 	background-image: url(up.jpg);
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	background-color: none;
-	background-size: 24px;
+	background-size: 12px;
 	background-position: center;
 	float:right;
 	margin: 0 auto;
@@ -58,10 +58,11 @@
 }
 
 .cred{
+	right:0px;
+	bottom:0px;
 	font-family:tahoma;
 	float:right;
 	font-size: 10px;
-	padding-bottom: 0px;
 }
 
 body {
@@ -76,7 +77,7 @@ body {
     color: purple;
     font-family: "Trirong", serif;
     text-shadow: 3px 3px 5px grey;
-    font-size: 150%;
+    font-size: 120%;
 	padding-left: 45px;
 	padding-right: 45px;
 	/*border: 1px solid red;*/
@@ -84,7 +85,7 @@ body {
 }
 
 .navi {
-    width: 15%;
+    width: 20%;
     float: left;
 	padding-top: 20px;
     padding-left: 30px;
@@ -95,18 +96,42 @@ body {
 
 .cont1 {
 	font-family: "Trirong", serif;
-    width: 70%;
+    width: 75%;
     float: left;
-    padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 30px;
+    padding: 10px;
+    /*border: 1px solid red;*/
+}
+
+.gal_cont1 {
+	font-family: "Trirong", serif;
+    width: 35%;
+    float: left;
+    padding:20px;
+    /*border: 1px solid red;*/
+}
+
+.gal_cont2 {
+	font-family: "Trirong", serif;
+    width: 35%;
+    float: left;
+    padding:20px;
     /*border: 1px solid red;*/
 }
 
 @media screen and (max-width: 600px) {
-  .navi, .cont1 {
+  .navi, .header {
     width: 100%;
+	font-size: 60%;
   }
+  
+  .gal_cont2, .gal_cont1, .cont1, .mySlides_h {
+    width: 90%;
+	font-size: 60%;
+	position: center;
+	
+  }
+
+  
 }
 
 .ul_s {
@@ -134,6 +159,7 @@ li a:hover:not(.active) {
 
 .active {
     font-size: 160%
+	
 }
 
 li a:link, li a:visited {
@@ -146,25 +172,163 @@ li a:link, li a:visited {
 
 
 
-/*image slider*/
+/*image slider index page*/
+
+
+.mySlide_h{
+	float: center;
+	font-family: "Trirong", serif;
+	width:100%;
+    font-size: 100%;
+	
+}
+
+.slide1{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	float: left;
+}
+
+.slide2{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	float: left;
+}
+.slide3{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	float: left;
+}
+
+/*image slider gallery page*/
+
+.btn_n {
+	background-color: tomato; /* Green */
+  border: none;
+  border-radius:10%;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+}
+
+.btn_n:hover{
+	background-color: purple;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.gal_baby {
+	position:c;
+    display: block;
+	position:center;
+	border-radius:15%;
+	width:300px;
+	height:350px;
+	/*border: 1px solid red;*/
+}
+
+.gal_teen {
+    display: block;
+	position:center;
+	border-radius:15%;
+	width:300px;
+	height:350px;
+	/*border: 1px solid red;*/
+}
+
+
+.gal_baby:hover{
+	cursor: pointer;
+	box-shadow: 0 1px 8px 2px purple;
+	transition: 0.3s;
+	
+}
+
+.gal_teen:hover {
+	cursor: pointer;
+	box-shadow: 0 1px 8px 2px purple;
+	transition: 0.3s;
+	
+}
 
 .mySlides {
 	padding: 30px;
     display: block;
 	position:center;
-	border-radius:15%;
+	border-radius:55%;
+	width:400px;
+	height:500px;
+	/*border: 1px solid red;*/
 }
 
 .mySlides2 {
 	padding: 30px;
     display: block;
 	position:center;
-	border-radius:15%;
+	border-radius:55%;
+	width:400px;
+	height:500px;
 }
 
 .mySlides3 {
 	padding: 30px;
     display: block;
 	position:center;
-	border-radius:15%;
+	border-radius:55%;
+	width:400px;
+	height:500px;
+}
+
+/*Gallery slide image*/
+
+
+
+/*Gallery baby Beaglyy*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 400px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
