@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beaglyy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<link rel="stylesheet" href="styles\styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+<div class ="header">
+
+	<h1>Life of Beaglyy</h1>
+	
+</div>
+
+
+<div class = "navi">
+  <ul class = "ul_s">
+	<b>
+    <li><a href="index.html">Beaglyy</a></li>
+    <li><a href="">First born Puppies</a></li>
+    <li><a href="">Second born Puppies</a></li>
+    <li><a href="">Furparents</a></li>
+	<li><a class="active" style="color:purple;" href="">Gallery</a></li>
+  </ul>
+	</b>
+
+</div>
+
+
+<div class="cont1">
+<h1 style="font-size:160%">Gallery</h1>
+
+<!-- Slide show -->
+<div class="gal_cont1">
+<center>
+  <h1 style="font-size:120%">Baby Beaglyy</h1>
+  <a href="gallery-babybeaglyy.html">
+	<img class="gal_baby" src="beaglyy/b1.jpg" >
+	<img class="gal_baby" src="beaglyy/b2.jpg" >
+	<img class="gal_baby" src="beaglyy/b3.jpg" >
+	<img class="gal_baby" src="beaglyy/b4.jpg" >
+	<img class="gal_baby" src="beaglyy/b5.jpg" >
+	<img class="gal_baby" src="beaglyy/b6.jpg" >
+	<img class="gal_baby" src="beaglyy/b7.jpg" >
+	<img class="gal_baby" src="beaglyy/b8.jpg" >
+	<img class="gal_baby" src="beaglyy/b9.jpg" >
+	<img class="gal_baby" src="beaglyy/b10.jpg" >
+	<img class="gal_baby" src="beaglyy/b11.jpg" >
+	<img class="gal_baby" src="beaglyy/b12.jpg" >
+	<img class="gal_baby" src="beaglyy/b13.jpg" >
+	<img class="gal_baby" src="beaglyy/b14.jpg" >
+	</a>
+    <!-- Add more slides with additional image elements if needed -->
+	<button class="btn_n" onclick="plusDivs(-1)">Back</button>
+    <button class="btn_n" onclick="plusDivs(1)">Next</button>
+</div>
+	
+<div class="gal_cont2">
+<center>
+	<h1 style="font-size:120%">Teen Beaglyy</h1>
+	<img class="gal_teen" src="beaglyy/teen/b1.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b2.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b3.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b4.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b5.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b6.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b7.jpg" >
+	<img class="gal_teen" src="beaglyy/teen/b8.jpg" >
+    <!-- Add more slides with additional image elements if needed -->
+	<button class="btn_n" onclick="plusDivs_t(-1)">Back</button>
+    <button class="btn_n" onclick="plusDivs_t(1)">Next</button>
+	
+  </div>
+</div>
+			
+
+
+<div class="floating_fnc">
+	
+		<button class="btn" onclick="scrollup()">
+			<span class="tooltiptext">Back to top</span>
+	</button>
+</div>
+
+<div class="cred">
+	<b>
+	<p>Copyrights intended</p>
+	<p>This website is for personal use only and you may contact the creator <a style="
+    color: red;
+    text-decoration: none;
+    font-family: Papyrus;
+    font-size: 150%;
+    padding: 1px 1px;" target="blank" href="https://www.facebook.com/shider.torre">Shider Torre</a>
+	for more information
+	</p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<script>
+
+//for manual slide
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("gal_baby");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+//beaglyy teen slide
+var slideIndex_t = 1;
+showDivs_t(slideIndex_t);
+
+function plusDivs_t(n) {
+  showDivs_t(slideIndex_t += n);
+}
+
+function showDivs_t(n) {
+  var i;
+  var x = document.getElementsByClassName("gal_teen");
+  if (n > x.length) {slideIndex_t = 1}
+  if (n < 1) {slideIndex_t = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex_t-1].style.display = "block";  
+}
+
+
+//for scroll up
+function scrollup(){
+window.scrollTo({
+	top:0, behavior: "smooth",
+	});
+}
+
+
+
+
+
+</script>
+
+
+
