@@ -66,22 +66,24 @@
 }
 
 body {
-    background-image: url(bg.png);
-    background-attachment: fixed;
-    background-size: cover;
+background-color: white;
+    
 }
 
 .header {
+	background-image: url(bg.png);
+	background-attachment: fixed;
+    background-size: cover;
+	
     position: left;
     top:0;
-    color: purple;
+    color: rgb(90, 90, 90);
     font-family: "Trirong", serif;
     text-shadow: 3px 3px 5px grey;
     font-size: 120%;
 	padding-left: 45px;
 	padding-right: 45px;
-	/*border: 1px solid red;*/
-	
+	border: 1px solid white;
 }
 
 .navi {
@@ -96,42 +98,10 @@ body {
 
 .cont1 {
 	font-family: "Trirong", serif;
-    width: 75%;
+    width: 80%;
     float: left;
     padding: 10px;
     /*border: 1px solid red;*/
-}
-
-.gal_cont1 {
-	font-family: "Trirong", serif;
-    width: 35%;
-    float: left;
-    padding:20px;
-    /*border: 1px solid red;*/
-}
-
-.gal_cont2 {
-	font-family: "Trirong", serif;
-    width: 35%;
-    float: left;
-    padding:20px;
-    /*border: 1px solid red;*/
-}
-
-@media screen and (max-width: 600px) {
-  .navi, .header {
-    width: 100%;
-	font-size: 60%;
-  }
-  
-  .gal_cont2, .gal_cont1, .cont1, .mySlides_h {
-    width: 90%;
-	font-size: 60%;
-	position: center;
-	
-  }
-
-  
 }
 
 .ul_s {
@@ -170,11 +140,7 @@ li a:link, li a:visited {
 }
 
 
-
-
 /*image slider index page*/
-
-
 .mySlide_h{
 	float: center;
 	font-family: "Trirong", serif;
@@ -201,32 +167,59 @@ li a:link, li a:visited {
 }
 
 /*image slider gallery page*/
+.gal_cont1 {
+	position: relative;
+	font-family: "Trirong", serif;
+    width: 35%;
+    float: left;
+    padding:30px;
+    /*border: 1px solid red;*/
+}
 
-.btn_n {
+.gal_cont2 {
+	position: relative;
+	font-family: "Trirong", serif;
+    width: 35%;
+    float: left;
+    padding:30px;
+    /*border: 1px solid red;*/
+}
+
+.gal_cont1 button{
 	background-color: tomato; /* Green */
   border: none;
-  border-radius:10%;
+  border-radius:50%;
   color: white;
-  padding: 10px 32px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 1px 25px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s; /* Safari */
   transition-duration: 0.3s;
 }
-
-.btn_n:hover{
+.gal_cont1 .btn_n{
+	position: absolute;
+	top: 60%;
+	left: 67%;
+}
+.gal_cont1 .btn_p{
+	position: absolute;
+	top: 60%;
+	left: 18%;
+}
+.gal_cont1 .btn_p:hover, .btn_n:hover{
+	
 	background-color: purple;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
 .gal_baby {
-	position:c;
-    display: block;
+	padding:5px;
+    display: inline-block;
 	position:center;
 	border-radius:15%;
 	width:300px;
@@ -235,7 +228,8 @@ li a:link, li a:visited {
 }
 
 .gal_teen {
-    display: block;
+	padding:5px;
+    display: inline-block;
 	position:center;
 	border-radius:15%;
 	width:300px;
@@ -257,6 +251,7 @@ li a:link, li a:visited {
 	transition: 0.3s;
 	
 }
+
 
 .mySlides {
 	padding: 30px;
@@ -285,6 +280,9 @@ li a:link, li a:visited {
 	width:400px;
 	height:500px;
 }
+
+
+
 
 /*Gallery slide image*/
 
@@ -320,10 +318,54 @@ div.desc {
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1400px) {
+	
+
+.gal_cont1 .btn_p{
+	position:relative;
+	display: inline-block;
+	float: left;
+}
+
+.gal_cont1 .btn_n{
+	position:relative;
+	display: inline-block;
+	float: left;
+}
+	
+	.mySlides, .mySlides2, .mySlides3{
+		width:300px;
+		height:400px;
+	}
+	
+	.navi, .header {
+    width: 100%;
+	font-size: 80%;
+  }
+  
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
+  }
+  
+  .gal_cont1, .gal_cont2{
+    width: 90%;
+	font-size: 80%;
+	position: center;
+	
+  }
+  
+  .gal_baby, .gal_teen{
+    width:400px;
+	height:450px;
+	position: center;
+  }
+  
+  .cont1, .mySlides_h {
+    width: 100%;
+	font-size: 80%;
+	position: center;
+	
   }
 }
 
@@ -331,4 +373,49 @@ div.desc {
   .responsive {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 600px) {
+	
+	.mySlides, .mySlides2, .mySlides3{
+		width:200px;
+		height:300px;
+		padding:10px;
+	}
+	
+  .navi, .header {
+    width: 100%;
+	font-size: 60%;
+  }
+  
+ .cont1, .mySlides_h {
+    width: 100%;
+	font-size: 60%;
+	position: center;
+	
+  }
+
+.gal_cont1, .gal_cont2{
+    width: 90%;
+	font-size: 80%;
+	position: center;
+	
+  }
+	.gal_cont1 .btn_n{
+	position: absolute;
+	top: 60%;
+	left: 75%;
+}
+	.gal_cont1 .btn_p{
+	position: absolute;
+	top: 60%;
+	left: 5%;
+}
+  
+  .gal_baby, .gal_teen{
+    width:200px;
+	height:250px;
+	position: center;
+  }
+  
 }
